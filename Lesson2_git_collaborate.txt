@@ -11,9 +11,15 @@ Remember in Lesson 1, Part 3 - this is the public path to the working repository
 Clone a repository (first time you pull the date from repository)
 $ git clone https://github.com/chiady/python-lessons.git
 
-Changing Files: remember git stores content. if you want to add files you need to be explicit
 
-1. Adding changes to files - Stage Changes in the local repository (not updated on original repository)
+#######################################################
+Part 2: Making Changes to the files
+#######################################################
+
+Changing Files: remember git stores content. if you want to add files you need to be explicit
+use whatever editor to change your stuff
+
+1. Adding changes to files - Stage Changes in the local repository (not yet updated on online repository)
 
 Add changes to the files in your project directory:
 $ git add .
@@ -38,3 +44,35 @@ $ git commit
 Response: text editor started that allows to put in your description. To close editor you should use following key sequence :wq (: - open command; w - write; q - quit)
 
 $ git commit -m "Your commit brief description"
+
+3. Uploads Changes to the online repository
+
+Step 1: Make sure nobody else modified files on the online repository (no conflicts)
+$ git pull
+
+Step 2: Upload your changes
+$ git push
+
+
+#######################################################
+Part 3: Collection of useful stuff
+#######################################################
+
+show you any changes that you’ve made but not yet added to the index
+$ git diff --cached
+
+get a brief summary of the situation
+$ git status
+
+combo add and commit shortcut (you don't have to run first add and then commit)
+$ git commit -a
+
+want to view changes made to a file
+
+Summary changes: $ git log --stat --summary
+History of your changes: git log
+Details: $ git log -p
+
+
+
+
