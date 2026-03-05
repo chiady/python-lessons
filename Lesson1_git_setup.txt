@@ -43,7 +43,7 @@ if you want to add only new files (including deletes):
 $ git add -A
 
 $ git commit
-Response: text editor started that allows to put in your description. To close editor you should use following key sequence :wq (: - open command; w - write; q - quit)
+Response: text editor started that allows to put in your description. To close editor you should use following key sequence "Esc" followed by ":wq" (: - open command; w - write; q - quit)
 
 $ git commit -m "Your commit brief description"
 
