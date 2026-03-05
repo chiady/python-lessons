@@ -1,7 +1,9 @@
 Lesson 1: Setup git and GitHub
 
-
+#######################################################
 Part 1: Install and setup git
+#######################################################
+
 Download and install git: https://git-scm.com/install/windows
 (optional) Download and install GitHub for desktop: https://desktop.github.com/download/
 
@@ -18,13 +20,59 @@ $ git config --global user.email you@yourdomain.example.com
 User Manual:
 $ git help
 
-
-Part 2: Create a new repository
-
+#######################################################
+Part 2: Create a new repository (LOCAL only)
+#######################################################
 
 make a new directory where all project files are being stored
 create or copy all files required for your project (both text or binary - images)
 
 Go to your project:
 $ cd "your project path"
-$git init
+$ git init
+Response: Reinitialized existing Git repository in C:/Temp/GitHub/python-lessons/.git/
+
+Add your all files in your project directory:
+$ git add .
+Response: "blank"
+
+if you want to add individual files use:
+$ git add file1 file2 file3
+
+if you want to add only new files (including deletes):
+$ git add -A
+
+$ git commit
+Response: text editor started that allows to put in your description. To close editor you should use following key sequence :wq (: - open command; w - write; q - quit)
+
+$ git commit -m "Your commit brief description"
+
+Congratulation, you have now a LOCAL repository
+
+#######################################################
+Part 3: GIT Collaboration with others
+#######################################################
+
+Create a new empty repository on GitHub - go to: https://github.com/<your user name>
+
+Remember your project public path:  https://github.com/chiady/python-lessons.git
+You will need to share this with others
+
+Connect your GitHub repository to the local one
+$ git remote set-url origin https://github.com/chiady/python-lessons.git
+
+Save your project on repository
+$ git push -u origin main
+Respones:
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 677 bytes | 338.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/chiady/python-lessons.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Congratulation, you have now saved your repository on GitHub
+

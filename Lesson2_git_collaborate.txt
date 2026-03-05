@@ -1,0 +1,41 @@
+Lesson 2: Collaborate with git and GitHub
+
+#######################################################
+Part 1: Create a copy of a remote repository
+#######################################################
+
+To get started you need to get the repository URL from your repository administrator
+
+Remember in Lesson 1, Part 3 - this is the public path to the working repository for this lesson: https://github.com/chiady/python-lessons.git
+
+Clone a repository (first time you pull the date from repository)
+$ git clone https://github.com/chiady/python-lessons.git
+
+Changing Files: remember git stores content. if you want to add files you need to be explicit
+
+1. Adding files
+
+Add your all files in your project directory:
+$ git add .
+Response: "blank"
+
+if you want to add individual files use:
+$ git add file1 file2 file3
+
+if you want to add only new files (including deletes):
+$ git add -A 
+or 
+$ git add -all
+
+if you want to update only files already added
+$ git add -u 
+or
+git add --update
+
+
+
+
+$ git commit
+Response: text editor started that allows to put in your description. To close editor you should use following key sequence :wq (: - open command; w - write; q - quit)
+
+$ git commit -m "Your commit brief description"
