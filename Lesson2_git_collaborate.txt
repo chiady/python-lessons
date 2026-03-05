@@ -13,11 +13,10 @@ $ git clone https://github.com/chiady/python-lessons.git
 
 Changing Files: remember git stores content. if you want to add files you need to be explicit
 
-1. Adding files
+1. Adding changes to files - Stage Changes in the local repository (not updated on original repository)
 
-Add your all files in your project directory:
+Add changes to the files in your project directory:
 $ git add .
-Response: "blank"
 
 if you want to add individual files use:
 $ git add file1 file2 file3
@@ -33,7 +32,7 @@ or
 git add --update
 
 
-
+2. Commit Changes
 
 $ git commit
 Response: text editor started that allows to put in your description. To close editor you should use following key sequence :wq (: - open command; w - write; q - quit)
