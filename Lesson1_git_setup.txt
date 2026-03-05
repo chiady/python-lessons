@@ -1,0 +1,30 @@
+Lesson 1: Setup git and GitHub
+
+
+Part 1: Install and setup git
+Download and install git: https://git-scm.com/install/windows
+(optional) Download and install GitHub for desktop: https://desktop.github.com/download/
+
+
+test installation: open a CLI (command line interface) and run command
+$git -v
+Response: git version 2.53.0.windows.1
+Alternatively you can app Git Bash or Git CMD(menu)
+
+Setup your git ID
+$ git config --global user.name "Your Name Comes Here"
+$ git config --global user.email you@yourdomain.example.com
+
+User Manual:
+$ git help
+
+
+Part 2: Create a new repository
+
+
+make a new directory where all project files are being stored
+create or copy all files required for your project (both text or binary - images)
+
+Go to your project:
+$ cd "your project path"
+$git init
