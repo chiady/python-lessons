@@ -1,0 +1,64 @@
+
+How to build a program?
+
+Phase 1: Algorithms
+- Math behind the problem you try to solve
+- all pen and paper + some basic programming
+- develop mathematical procedure - for some basic examples
+- program basic function to represent the math and run some tests.
+Output: simple function that is mathematically correct
+
+
+Phase 2: Requirements
+- Describe what your program is going to develop
+- all pen and paper
+- Define your inputs
+- Define your outputs
+- Define what you need around algorithms 
+- Define parameters and knobs
+Output: Clear Program Definition
+
+
+Phase 3: Architecture Design
+- Define libraries you are going to use (e.g., mathplotlib)
+- Define your input and output file structure (e.g., CSV, TXT, ...) --> define a reading and output writing function
+- Define your data structure - how are you storing and manipulating your data (e.g., use matrix, or dictionary)
+- Define your data processing functions (e.g., what you get from algorithm phase)
+- Define how you reuse your code - what you put in a library (that might be published) vs. one time use locally
+Output: Functions and data structure that need to be implemented
+
+
+Phase 4: Design (Programming) - Start implementation of Phase 3
+- Write code for input and output + test bed (give a known input and expect a known output) --> code into a library
+- Write code for data structures
+- Write code for defined functions + test bed --> code into a library
+- Write overall program + test bed --> main program
+Output: correct set of functions that represents what you want to do --> command line program
+
+
+Phase 5: Build an Interface
+- Define what interface libraries you want to use
+- Define command line parameters (if any)
+- Define wireframe program (how you load input, intermediate displays, how you visualize the output) - pen and paper
+- Implementation of the wireframe
+- Small amount of testing
+Output: Beautiful Working Program
+
+
+Phase 6: Deployment
+- Basic Library - create a minimally functional library (e.g., like your own mathplotlib)
+- Create a documentation for functions (how to use them, and explain parameters + examples)
+- Create a package for your final product - with interface
+
+
+Phase 7: Maintenance - Bug fixing
+
+
+Homework: Take own example and go through each phase
+
+Read the microscope files and apply Fourier transform on the image. Display output
+
+Homework for next time:
+- Make a basic program to do a Fourier transform on a 10x10 matrix (hint use numpy -- numpy.fft.fft2)
+- Build a function / program that reads all data from the microscope (TIFF + Metadata) into a data structure. If tiff has multiple images just read one; (hint use OpenCV)
+- Use command line parameter to select which image to load (hint use argparse)
